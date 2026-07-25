@@ -4,8 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Image search</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    
+<body class="font-sans">
+    <header>
+        <nav class="flex justify-end gap-4 p-4 text-sm">
+            <a class="hover:underline" href="index.html">Google</a>
+            <a class="hover:underline" href="advanced.html">Advanced</a>
+        </nav>
+    </header>
+    <main class="flex flex-col items-center gap-8 mt-8">
+        <div class="relative">
+            <h1 class="text-8xl font-medium">Google</h1>
+            <p class="text-blue-500 text-xl text-right">image</p>
+        </div>
+        <Form action="https://google.com/search" class="w-full flex flex-col items-center">
+            <div class="flex items-center w-full max-w-2xl h-12 px-5 border border-gray-300 rounded-full hover:shadow-md transition">
+                <input type="text" name="q" placeholder="Image search" class="flex-1 outline-none bg-transparent placeholder-gray-500 text-base">
+                <input type="hidden" name="tbm" value="isch">
+            </div>
+            <div class="mt-4">
+                 <button class="bg-gray-100 px-4 py-2 rounded-md text-sm hover:bg-gray-200 hover:shadow-md transition" type="submit">Google search</button>
+            </div>
+        </Form>
+    </main>
 </body>
 </html>

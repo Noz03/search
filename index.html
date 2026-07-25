@@ -1,12 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Search</title>
-    </head>
-    <body>
-        <form action="https://google.com/search">
-            <input type="text" name="q">
-            <input type="submit" value="Google Search">
-        </form>
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="">
+    <header>
+        <nav class="flex justify-end gap-4 p-4">
+            <a href="image.html">Image</a>
+            <a href="advanced.html">Advanced</a>
+        </nav>
+    </header>
+    <main class="flex flex-col items-center justify-center gap-8">
+        <h1 class="text-8xl font-medium ">Google</h1>
+        <form action="https://google.com/search" class="w-full flex flex-col items-center">
+            <div class="flex items-center w-full max-w-2xl px-4 py-2 rounded-full border border-gray-300 hover:shadow-md hover:border-gray-400">
+                <input class="outline-none bg-gray-100 bg-transparent placeholder-gray-500" placeholder="Search Google" type="text" name="q">
+            </div>
+            <div class="flex mt-8 gap-4">
+                <button type="submit" class="bg-gray-100 px-4 py-2 rounded-md text-sm hover:bg-gray-300 hover:shadow-md transition">Google search</button>
+                <button type="submit" name="btnI=1" class="bg-gray-100 px-4 py-2 rounded-md text-sm hover:bg-gray-300 hover:shadow-md transition">I'm feeling lucky</button>
+            </div>
+        </form> 
+    </main>
+</body>
 </html>
